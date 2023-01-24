@@ -1,0 +1,3 @@
+[1213/024953.416:ERROR:main_dll_loader_win.cc(136)] Failed to load Chrome DLL from C:\Program Files (x86)\Bookness\Application\58.0.3029.81\chrome.dll: Le module spécifié est introuvable. (0x7E)
+[1214/192751.444:ERROR:persistent_memory_allocator.cc(777)] Corruption detected in shared-memory segment.
+[1227/210604.076:ERROR:main_dll_loader_win.cc(136)] Failed to load Chrome DLL from C:\Program Files (x86)\Bookness\Application\58.0.3029.81\chrome.dll: Le module spécifié est introuvable. (0x7E)

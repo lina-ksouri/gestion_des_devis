@@ -1,0 +1,848 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @page {
+            size: A4; /* Change from the default size of A4 */
+            margin: 3mm; /* Set margin on each page */
+            margin-top: 0mm;
+        }
+        body {
+            font-family: "Calibri Light", sans-serif;
+            font-size: 12px;
+            color :black;
+        }
+
+
+        /****************************************************************************/
+        /****************************************************************************/
+        
+        .header-container {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+            padding-right: 0px;
+            margin-bottom: 2em;
+        }
+       
+        .header-div-1 {
+            width: 60%;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+			font-family: Arial;
+            
+        }
+        .header-div-2 {
+            width: 29.5%;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+			
+
+        }
+        
+        /****************************************************************************/
+        /*  title   */
+		
+        .title {
+            width: 100%;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+			text-align: center;
+            font-size: 35px;
+			font-family: Times New Roman Bold;
+			margin-bottom: 0px;
+           
+        }
+		
+		.sous_titre {
+            /* border: 1px solid black; */
+            text-align: center;
+            font-size: 11px;
+            margin-bottom: 0em;
+
+        }
+		.logo-img{
+            width: 50px;
+            height: 50px;
+			vertical-align: top;
+			float: right;
+			margin:0px 0px;
+        }
+		.date_devis {
+            /*  border: 1px solid black; */
+            text-align: center;
+            font-size: 11px;
+            margin-bottom: 0em;
+
+        }
+		.numero{
+		font-weight: bold;
+		font-size:11px;
+        margin-bottom: 0.5em;
+
+		}
+        /****************************************************************************/
+        .info-container {
+            display: flex; /* or inline-flex */
+            font-size: 11px;
+            line-height: 1.5;
+            font-family: "Calibri Light", sans-serif;
+			
+        }
+        
+        .info-div-1 {
+            width: 38%;
+            /* border:1px solid black; */
+            padding: 7px;
+			/*font-weight: bold;*/
+			padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 0px;
+        }
+        .info-div-2 {
+            width: 38%;
+            /* border:1px solid black; */
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+			 /*font-weight: bold;*/
+        }
+        
+		.info-div-3 {
+            width: 30%;
+            /* border:1px solid black; */
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+			/*font-weight: bold;*/
+        }
+        .info-div-4 {
+            width: 50%;
+            /* border:1px solid black; */
+            padding: 7px;
+			/*font-weight: bold;*/
+			padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 0px;
+        }
+        .info-div-5 {
+            width: 20%;
+            /* border:1px solid black; */
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+			 /*font-weight: bold;*/
+        }
+        
+		.info-div-6 {
+            width: 20%;
+            /* border:1px solid black; */
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+			/*font-weight: bold;*/
+        }
+        /****************************************************************************/
+        .address-header-container {
+            display: flex; /* or inline-flex */
+            font-size: 12px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+			background-color: #3494BA;
+        }
+        .address-header-div-1{
+            width: 50%;
+             height: 15px;
+            font-size: 12px;
+            border-right:1.5px solid black;
+            
+            color: white;
+            text-align: center;
+			font-weight:  blod;
+			border-color: #3494BA;
+        }
+
+        .address-header-div-2{
+            width: 50%;
+             height: 15px;
+            font-size: 12px;
+            border-right:1.5px solid black;
+            background-color: #3494BA;
+            color: white;
+            text-align: center;
+			font-weight:  blod;
+			border-color: #3494BA;
+        }
+        .address-body-container {
+            display: flex; /* or inline-flex */
+            font-size: 11px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+        }
+        .address-body-div-1 {
+            width: 50%;
+            height: 85px;
+            font-size: 11px;
+            border-right:1.5px solid black;
+            padding-top: 10px;
+            padding-left: 7px;
+			font-weight:blod;
+			border-color: #3494BA;
+        }
+	
+        .address-body-div-2 {
+            width: 50%;
+            height: 85px;
+            font-size: 11px;
+            /*border-right:1.5px solid black;*/
+            padding-top: 10px;
+            padding-left: 7px;
+			border-color: #3494BA;
+        }
+
+        /****************************************************************************/
+        .general-info-container {
+            display: flex; /* or inline-flex */
+            font-size: 11px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+        }
+        .info-body-1 {
+            width: 50%;
+            height: 70px;
+            font-size: 10px;
+            border-right:1.5px solid black;
+            padding-top: 10px;
+            padding-left: 7px;
+			font-weight:blod;
+			border-color: #3494BA;
+        }
+		
+	   
+        .info-body-2 {
+            width: 50%;
+            height: 70px;
+            font-size: 10px;
+            /*border-right:1.5px solid black;*/
+            padding-top: 10px;
+            padding-left: 7px;
+			font-weight:blod;
+			border-color: #3494BA;
+			
+        }
+		/****************************************************************************/
+		/*info supplémentaire*/
+		.supp-info-container{
+            display: flex; /* or inline-flex */
+            font-size: 11px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			height: 80px;
+			font-size: 10px;
+            padding-top: 10px;
+            padding-left: 7px;
+			font-weight:blod;
+			border-color: #3494BA;
+        }
+        /****************************************************************************/
+
+        .formule-header-container {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+            border-top:1.5px ;
+            border-left:1.5px ;
+            border-right:1.5px ;
+			border-color: #3494BA;
+        }
+
+        .formule-header {
+            width: 40%;
+            height: 15px;
+            font-size: 12px;
+            border-right:1.5px solid black;
+            background-color: #3494BA;
+            color: white;
+            text-align: center;
+			font-family:Arial Blod;
+			border-color: #3494BA;
+        }
+        .price-header {
+            width: 35%;
+            height: 15px;
+			font-size: 12px;
+            border-right:1.5px solid black;
+            background-color: #3494BA;
+            color: white;
+            text-align: center;
+			font-weight:  blod;
+			border-color: #3494BA;
+        }
+        .payment-header {
+            width: 35%;
+            height: 15px;
+			font-size:12px;
+            background-color: #3494BA;
+            color: white;
+            text-align: center;
+			font-weight:  blod;
+			border-color: #3494BA;
+        }
+
+        /****************************************************************************/
+
+        .formule-body-container {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+            height: 110px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+        }
+
+        .formule-body {
+            width: 39%;
+            padding-left: 5px;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+        }
+        .price-body {
+            width: 30%;
+            text-align: center;
+            vertical-align: bottom;
+            padding-top: 30px;
+			border-color: #3494BA;
+            
+        }
+        .payment-body {
+            width: 30%;
+            padding-left:7px;
+            padding-top:7px;
+            border-left:1.5px solid black;
+			border-color: #3494BA;
+        }
+        /****************************************************************************/
+
+        .detail-formule-header-container-1 {
+            display: flex; /* or inline-flex */
+            font-size: 12px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			 background-color: #3494BA;
+			border-color: #3494BA;
+        }
+        .detail-formule-header-1 {
+            width: 100%;
+            height: 15px;
+            font-size: 12px;
+           border-right:1.5px solid black;
+            background-color: #3494BA;
+            color: white;
+            text-align: center;
+			font-weight:  blod;
+			border-color: #3494BA;
+        }
+        
+
+        /****************************************************************************/
+
+        .detail-formule-header-container-2 {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+			height: 95px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+			border-color: #3494BA;
+        }
+
+        .detail-formule-header {
+            width: 60%;
+			 border-right:1.5px solid black;
+            text-align: center;
+			border-color: #3494BA;
+        }
+        .detail-formule-header-luxe {
+            width: 15%;
+			font-size: 10px;
+			 border-right:1.5px solid black;
+            text-align: center;
+			border-color: #3494BA;
+        }
+		 .detail-formule-header-confort {
+            width: 15%;
+			border-right:1.5px solid black;
+            text-align: center;
+			border-color: #3494BA;
+        }
+        
+	    .detail-formule-header-standard {
+            width: 15%;
+            text-align: center;
+        }
+        
+        
+    /****************************************************************************/
+
+        .detail-formule-body-container {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+            height: 13px;
+            border-top:1.5px solid black;
+            border-left:1.5px solid black;
+            border-right:1.5px solid black;
+            
+			border-color: #3494BA;
+        }
+	
+		
+		.part1{
+		 width: 59.9%;
+		 font-size:10px;
+		 border-right:1.5px solid black;
+        
+			border-color: #3494BA;
+		}
+		.part2{
+		    width: 15%;
+		    border-right:1.5px solid black;
+			border-color: #3494BA;
+		}
+		.part3{
+		width: 15%;
+		border-right:1.5px solid black;
+            text-align: center;
+			border-color: #3494BA;
+		}
+		.part4{
+		width: 15%;
+		
+            text-align: center;
+			
+		}
+			.detail-formule-body-container1 {
+            display: flex; /* or inline-flex */
+            font-size: 10px;
+            height: 20px;
+            border-top:1.5px solid black;
+            
+            
+			border-color: #3494BA;
+        }
+		
+
+       
+        /*  footer  */
+        /*  footer  */
+        .footer { 
+        padding-top: 0px;
+        }
+        .signature {
+        width:70%; 
+        float:left; 
+        height: 10px;
+		font-size:10px;
+        }
+        
+        .date {
+        width:40%; 
+        height: 10px; 
+        float:right; 
+		font-size:10px;
+        }
+
+        /* Others */
+        .bold-txt {
+            font-weight: bold;
+            display: inline;
+			font-size: 9px
+        }
+        .bold-align-txt {
+            font-weight: bold;
+            text-decoration: underline;
+            display: inline
+        }
+        
+    </style>
+</head>
+    <body>
+        <div class="container">
+             <div class="header-container">
+                <div class="header-div-1">
+                    <strong style="white-space:pre;  font-size:11px;">Haya DEM     45 rue Berzelius – 75017 Paris</strong> <br> 
+                    <strong style="white-space:pre; font-size:11px;">SIREN :           844 234 047 </strong> <br>
+                    <strong style="white-space:pre; font-size:11px;">IBAN :             FR76 1695 8000 0136 2789 9371 208 BIC : QNTOFRP1 XXX</strong> <br>
+                </div>
+                <div class="header-div-2">
+                    <strong style="white-space:pre;font-size:11px; ">Portable:       07.66.85.22.19 // 06.68.88.46.46</strong> <br>
+                    <strong style="white-space:pre;font-size:11px;">Fixe :             01.44.85.34.00</strong><br>
+					<strong style="white-space:pre;font-size:11px;">Mail :             Haya75dem @gmail.com </strong><br>
+
+                </div>
+                </div>
+				</div>
+              
+            <div class="title">
+                Devis Déménagement <img class="logo-img" src="haya.PNG"> 
+			</div>
+			
+			 <div class="sous_titre">
+                 Offre valable 15 jours à partir de la date du devis
+            </div>
+            <div class="date_devis">
+                 <p> Date Devis : 2021-08-08 </p>
+            </div>
+            <div class="numero">
+			    Numéro de devis : Haya_2021_00005 
+			</div>
+            <div class="info-container">
+                <div class="info-div-1">
+                  <strong>  Client: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ksouri lina<br>
+                    Téléphone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+                    Mail : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ksouri.lina36@gmail.com <br>
+                </strong>
+                </div>
+                <div class="info-div-2">
+                   <strong> 
+                    Date du Déménagement: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021-08-21 <br>
+                    Date de Livraison Prévue: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021-08-08 <br>
+                    Distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Volume : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 m3<br>	
+</strong>					
+                </div>
+
+			<div class="info-div-3">
+                 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 <strong>Date de déménagement provisoire</strong>
+                </div>
+            </div>
+
+            <div class="address-header-container">
+                <div class="address-header-div-1">
+                    Adresse Départ 
+                </div>
+                <div class="address-header-div-2">
+                    Adresse Arrivée
+                </div>
+            </div>
+
+
+            <div class="address-body-container">
+                <div class="address-body-div-1">
+                 <strong>   Adresse : </strong><br>
+				   &nbsp;beja&nbsp; <br><br><br>
+				   <strong>Etage: <br>
+                    Ascenseur :  </strong>
+                </div>
+                <div class="address-body-div-2">
+                   <strong> Adresse :</strong><br>
+					&nbsp;&nbsp; <br><br><br>
+					<strong>Etage: <br>
+                    Ascenseur :   </strong>
+                </div>
+            </div>
+
+
+            <div class="general-info-container">
+			  <div class="info-body-1" style="font-size:11px;">
+                <strong>Infos Depart:</strong> <br>
+                 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Courette : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                  Monte-Charge<br>
+				  <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Cave/Ss sol: &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                Garage/Box <br>
+				Accès:  <br>
+				 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Escale: 
+              </div>
+			  <div class="info-body-2" style="font-size:11px;">
+                <strong>Infos Arrivée:</strong> <br>
+                 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Courette : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                  Monte-Charge<br>
+				  <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Cave/Ss sol: &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                Garage/Box <br>
+				Accès:  <br>
+				 <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                 Escale: 
+              </div>
+           </div>
+            <div class="supp-info-container">
+                
+                <div class="info-div-4" style="font-size: 11px;">
+                    <strong>Info Supp :</strong> <br>
+                     <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                    Piano:      <br>
+                     <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                    Coffre Fort:      <br>
+                    Infos Supp :
+                  </div>
+                  <div class="info-div-5" style="font-size: 11px;">
+                    <strong></strong> <br>
+                     <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                    Moto :  <br>
+                     <img src="https://img.icons8.com/material-outlined/10/000000/unchecked-checkbox.png"/>
+                     Gardiennage :  <br>
+                        
+                   </div>  						
+              <div class="info-div-6" style="font-size: 11px;">
+                <strong></strong> <br>
+                Objet Spéciaux : 
+                  </div>
+              </div>
+				
+            <div class="formule-header-container">
+                <div class="formule-header">
+                    Votre Formule
+                </div>
+                <div class="price-header">
+                    Prix TTC 
+                </div>
+                <div class="payment-header">
+                    Modalité de Paiement
+                </div>
+            </div>
+
+
+            <div class="formule-body-container">
+                <div class="formule-body" style="font-size:10px;">
+                   <strong> <p style="text-align: center; font-size: 20px; ">STANDARD </p> </strong>
+                    <p class="bold-txt">Assurance Haya Confort : </p><br>
+                           Responsabilité contractuelle transporteur à<br> hauteur de 50.000€.<br>
+                    En cas de casse vol détérioration
+                </div>
+                <div class="price-body">
+                    <p style="font-size: 20px; "><b>NaN €</b></p>
+                </div>
+                <div class="payment-body"  style="font-size:9px;">
+                    Pour tout supplément de cubage le jour de votre <br>
+					déménagement nous sommes en droit de vous <br>
+					réclamer la différence. <br><br>
+                    Pour les formules ECO ; Standard et Luxe. <br>
+                    Versement de 30% d’arrhes : NaN € <br>
+                    - Au chargement : NaN € <br>
+                    - A la livraison : NaN €
+                </div>
+            </div>
+
+            <!-- container of the title "detailes Formules" -->
+            <div class="detail-formule-header-container-1">
+                <div class="detail-formule-header-1">
+                    Détails de nos Prestations
+                </div>
+            </div>
+
+            <!-- header of the table details formules -->
+            <div class="detail-formule-header-container-2">
+                <div class="detail-formule-header"> 
+                      <strong> <p style="margin-bottom:1.4em; font-size: 10px;">Quel que soit la formule que vous choisissez tous nos cartons et autre matériel
+    <br>professionnel de déménagement sont offerts par nos commerciaux
+ <br> Nos Visites techniques pour valider le cubage sont gratuites et sans engagement. 
+</p></strong>
+<p style=" height: 15px; font-size: 12px;  background-color: #3494BA;
+            color: white; text-align: center; font-weight:  blod;"> Nos Prestations </p>
+ 
+               </div> 
+                <div class="detail-formule-header-luxe"> 
+                    <p style="font-family: KonTikiEnchantedJF; font-size: 11px; color: #3494BA; "> HAYA </p>
+					<strong>LUXE: <br> NaN € </strong>
+					 <div style="font-size: 10px; color:blue;">Déménagement <br>clé en main!</div>
+                </div> 
+				<div class="detail-formule-header-confort"> 
+                    <p style="font-family: KonTikiEnchantedJF; font-size: 11px; color: #3494BA; "> HAYA </p>
+					<strong >CONFORT: <br> NaN €</strong>
+					<div style="font-size: 10px; color:blue;"> Est le choix<br> naturel</div>
+                </div> 
+				<div class="detail-formule-header-standard"> 
+                    <p style="font-family: KonTikiEnchantedJF; font-size: 11px; color: #3494BA;"> HAYA </p>
+					<strong >STANDARD: <br> NaN € </strong>
+					<div style="font-size: 10px; color:blue;">Allège votre budget <br> Nos Prestations de déménagement.</div>
+                </div> 
+			
+            </div>
+			
+
+
+           <div class="detail-formule-body-container">
+				<div class="part1">
+                    Chargement – transport et livraison
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div>  
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Livraison de cartons
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Protection du mobilier (sous couverture) mise sous housse des matelas et sommiers
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Conditionnement des tableaux et des miroirs
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Démontage et remontage du mobilier non fixé aux murs
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                   Mise en penderie des vêtements
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Emballage des objets fragiles (vaisselles, verreries, bibelots, …)
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                   Dispatch de votre mobilier et de vos biens
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Reprise des emballages en fin de déménagement 
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Déballage des objets fragiles (vaisselles, verreries, bibelots, …)
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Emballage des objets non fragiles (linge, livres, …) 
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                   Déballage des objets non fragiles (linge, livres, …) 
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Débranchement des appareils électroménagers
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container">
+				<div class="part1">
+                    Démontage du mobilier fixé au mur
+				</div>
+				<div class = "part2"></div>
+				<div class = "part3"></div>
+				<div class = "part4"></div>
+				
+                </div> 
+				<div class="detail-formule-body-container1">
+                </div> 
+			   
+			   
+               
+
+            
+            <div class="footer">
+                <div class="header">
+                    <div class="informations">
+                        <p style="color: Blue; font-weight:  blod;">Accord du devis et des conditions générales de ventes<br><br>Signature Client</p>
+                    </div>
+                    <div class="date" style="color: Blue; font-family:Arial">
+                      Date :
+                    </div>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>

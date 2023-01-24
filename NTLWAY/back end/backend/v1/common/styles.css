@@ -1,0 +1,361 @@
+
+body {
+    font-family: "Calibri Light", sans-serif;
+}
+.container {
+  width:100%; 
+  height: 300px;
+}
+
+
+
+
+
+
+
+/*******************************************************/
+/*  header  */
+
+header {
+  width:100%; 
+  float:left; 
+  background: pink; 
+  height: 150px;
+}
+
+.logo {
+  float: right;
+  width: 7%;
+}
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+  float: left;
+  
+}
+
+.first-box {
+  width:90%; 
+  float:left; 
+  height: 74px;
+}
+
+.first-box p {
+  color: #ffffff;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.second-box {
+  width:8%; 
+  height: 74px; 
+  float:right; 
+}
+
+.second-box p {
+  color: #ffffff;
+
+}
+
+
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-table-row {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+/*  title   */
+
+.title {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+/*******************************************************/
+/*  client infos  */
+
+.infos {
+    background-color: white;
+}
+
+.infos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.info-table-row {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-collapse: collapse;
+}
+
+
+
+
+
+/*******************************************************/
+/*  addresses  */
+
+.addresses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.bordered-tables {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.addresses-table-header{
+    background-color : #3494BA;
+
+}
+.addresses-table-header th{
+    color: #ffffff;
+    font-size: 14px;
+}
+.addresses-table-cell {
+    padding: 10px;
+    
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+/*  formules  */
+
+.formule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.formule-table-header{
+    background-color : #3494BA;
+}
+.formule-table-header th{
+    color: #ffffff;
+}
+
+.formule-table-cell {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+
+}
+
+.formule-table-right-cell {
+    width: 40%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+
+}
+
+.formule-table-middle-cell {
+    width: 30%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+
+}
+.formule-table-left-cell {
+    width: 30%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+
+}
+
+.price-txt {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.centered-txt {
+    text-align:center;
+    width: 100px;
+    min-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+/*  details des formules  */
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table-header{
+    background-color : #3494BA;
+}
+.details-table-header th{
+    color: #ffffff;
+}
+.details-table-header-cell {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0px solid black;
+    vertical-align:bottom;
+    text-align:center;
+
+}
+
+/* CSS for The Details Table */
+.details-table-cell {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+/*  footer  */
+
+.footer { 
+  padding-top: 50px;
+}
+
+
+
+.signature {
+  width:70%; 
+  float:left; 
+  height: 74px;
+}
+
+.signature p {
+  color: #000000;
+  /*
+  padding-left: 80px;
+  padding-top: 50px;
+  */
+}
+
+.date {
+  width:20%; 
+  height: 74px; 
+  float:right; 
+}
+
+.date p {
+  color: #000000;
+
+}
+
+/*******************************************************/
+/* Others */
+
+
+
+
+
+
+
+
+
+
+
+
+.bold-txt {
+    font-weight: bold;
+    display: inline
+}
+
+
+.bold-align-txt {
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline
+}
