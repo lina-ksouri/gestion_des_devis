@@ -57,10 +57,5 @@ username: admin
 password: rootroot
 
 
-we will use this Gmail Account to test
-
-username : nassim.devis@gmail.com
-password: Azerty123.
-
 ## NB :
 for more information you can visit https://www.djangoproject.com/start/
